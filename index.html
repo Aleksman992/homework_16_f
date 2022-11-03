@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Форми - у.16</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header></header>
+    <main class="page">
+      <form class="form" method="post"  action="https://jsonplaceholder.typicode.com/posts">
+        <div class="form__input">
+          <label for="number-1">НОМЕР П\П</label>
+          <input id="number-1" tabindex="2" autocomplete="off" placeholder="номер п\п" name="number-1" type="number">
+        </div>
+        <div class="form__input">
+          <input required tabindex="1" placeholder="сума" name="amount" type="text">
+        </div>
+        <div class="form__input">
+          <input  placeholder="email" name="email" value="Gmail.com"  type="email">
+        </div>
+        <div class="form__input">
+          <input autocomplete="off" placeholder="телефон" name="phone"  type="tel">
+        </div>
+        <div class="form__input">
+          <input autocomplete="off" placeholder="пароль" name="password"  type="password">
+        </div>
+        <div class="form__input">
+          <input autocomplete="off"  name="date" type="date">
+        </div>
+        <div class="form__input">
+          <input autocomplete="off" value="#ffffff" name="color" type="color">
+        </div>
+        <div class="form__input">
+          <input autocomplete="off"  name="range" type="range">
+        </div>
+        <div class="form__input form__input-checkbox">
+          <input id="tits-big" checked   type="checkbox" name="tits" >
+          <label for="tits-big">Великі?</label>
+        </div>
+        <div class="form__input form__input-checkbox">
+          <input id="tits-small"   type="checkbox" name="tits" >
+          <label for="tits-small">Маленькі?</label>
+        </div>
+        <div class="form__radio">
+          <h2 class="form__title">Який мотоцикол краще для тебе?</h2>
+          <div class="form__radio-motorcycle">
+            <input id="sport-s" required  value="sport" type="radio" name="motorcycle">
+            <label for="sport-s">СПОРТ</label>
+          </div>
+          <div class="form__radio-motorcycle">
+            <input id="tourist-t" checked required  value="tourist" type="radio" name="motorcycle">
+            <label for="tourist-t">ТУРИС</label>
+          </div>
+          <div class="form__radio-motorcycle">
+            <input id="enduro-e" required  value="enduro" type="radio" name="motorcycle">
+            <label for="enduro-e">ЕНДУРО</label>
+          </div>
+        </div>
+        <div class="form__input">
+          <input name="file" accept="image/png, image/jpeg" multiple type="file">
+        </div>
+        <div class="form__textarea">
+          <textarea autocomplete="off" name="message" ></textarea>
+        </div>
+        <div class="form__select">
+          <select multiple name="form__spare-parts" >
+            <option value="carburettor">карбіратор</option>
+            <option value="filter">фільтр</option>
+            <option value="muffler">глушник</option>
+            <option selected value="chain">цеп</option>
+          </select>
+        </div>
+        <div class="form__button">
+          <button type="button">КНОПКА</button>
+          <button type="reset">ОБНУЛИТИ ФОРМУ</button>
+          <button type="submit">ВІДПРАВИТИ ФОРМУ</button>
+        </div>
+      </form>
+
+      <div class="model">
+        <div class="model__img">
+          <img src="img/illustration.svg" alt="svg">
+        </div>
+        <form class="model__form form-block" method="get" action="#">
+          <div class="form-block__title">
+            <h6>Any questions?</h6>
+            <h1>Drop us a line</h1>
+          </div>
+          <div class="form-block__box">
+            <div class="form-block__name  ">
+              <label for="name-1">First Name*</label>
+              <input id="name-1" autocomplete="off" placeholder="Your first name" name="name-1" type="text">
+            </div>
+            <div class="form-block__name ">
+              <label for="name-2">Last Name*</label>
+              <input id="name-2" autocomplete="off" placeholder="Your first name" name="name-2" type="text">
+            </div>
+            <div class="form-block__name ">
+              <label for="name-3">Email*</label>
+              <input id="name-3" autocomplete="off" placeholder="Your working email" name="name-3" type="email">
+            </div>
+            <div class="form-block__name ">
+              <label for="name-4">Last Name*</label>
+              <input id="name-4" autocomplete="off" placeholder="Your phone name" name="name-4" type="tel">
+            </div>
+            <div class="form-block__message">
+              <label for="message-1">Message*</label>
+              <textarea autocomplete="off" placeholder="Your message" name="message" id="message-1" ></textarea>
+            </div>
+            <div class="form-block__page">
+            <div class="form-block__checkbox">
+              <label for="checkbox-1" class="form-block__label"><span  class="form-block__text">I agree to receive communications from Createx Online School</span></label>
+              <input id="checkbox-1" class="form-block__input" name="checkbox-1" type="checkbox" >
+            </div>
+            <div class="form-block__button">
+              <button type="submit">Send message</button>
+            </div>
+            </div>
+          </div>
+        </form>
+        
+      </div>
+    </main>
+    <footer></footer>
+  </div>
+</body>
+</html>
